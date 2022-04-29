@@ -70,18 +70,15 @@ An introductory project on:
              15 IMPORT_FROM              2 (sub)
              18 STORE_FAST               3 (sub)
              21 POP_TOP
-
   4          22 LOAD_FAST                0 (a)
              25 LOAD_FAST                1 (b)
              28 COMPARE_OP               0 (<)
              31 POP_JUMP_IF_FALSE       94
-
   5          34 LOAD_FAST                2 (add)
              37 LOAD_FAST                0 (a)
              40 LOAD_FAST                1 (b)
              43 CALL_FUNCTION            2 (2 positional, 0 keyword pair)
              46 STORE_FAST               4 (c)
-
   6          49 SETUP_LOOP              38 (to 90)
              52 LOAD_GLOBAL              3 (range)
              55 LOAD_CONST               3 (4)
@@ -90,7 +87,6 @@ An introductory project on:
              64 GET_ITER
         >>   65 FOR_ITER                21 (to 89)
              68 STORE_FAST               5 (i)
-
   7          71 LOAD_FAST                2 (add)
              74 LOAD_FAST                4 (c)
              77 LOAD_FAST                5 (i)
@@ -98,10 +94,8 @@ An introductory project on:
              83 STORE_FAST               4 (c)
              86 JUMP_ABSOLUTE           65
         >>   89 POP_BLOCK
-
   8     >>   90 LOAD_FAST                4 (c)
              93 RETURN_VALUE
-
  10     >>   94 LOAD_FAST                3 (sub)
              97 LOAD_FAST                0 (a)
             100 LOAD_FAST                1 (b)
